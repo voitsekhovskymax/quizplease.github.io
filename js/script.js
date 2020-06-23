@@ -15,7 +15,7 @@ $(document).ready(function () {
 	
 	
 	
-	var owl = $(".owl-carousel").owlCarousel({
+	var owl = $(".owl-carousel.schedule-carousel").owlCarousel({
 		loop: false,
 		margin: 10,
 		center: true,
@@ -46,6 +46,48 @@ $(document).ready(function () {
 		$item.addClass("active");
 		
 		
+	});
+	
+	
+	var owl2 = $(".owl-carousel.insta-slider").owlCarousel({
+		loop: false,
+		margin: 10,
+		center: true,
+		// stagePadding: 30,
+		responsive: {
+			0: {
+				items: 1
+			},
+			600: {
+				items: 3
+			},
+			1000: {
+				items: 5
+			}
+		}
+	});
+	
+	var owl3 = $(".owl-carousel.question-examples-slider").owlCarousel({
+		loop: false,
+		margin: 10,
+		center: true,
+		// stagePadding: 30,
+		responsive: {
+			0: {
+				items: 1
+			},
+			600: {
+				items: 3
+			},
+			1000: {
+				items: 5
+			}
+		}
+	});
+	
+	$(".faq-collapse .question").click(function () {
+		$(this).toggleClass("open");
+		$(this).next().slideToggle();
 	});
 	
 	
