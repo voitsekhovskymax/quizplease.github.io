@@ -54,6 +54,7 @@ $(document).ready(function () {
 		margin: 10,
 		center: true,
 		// stagePadding: 30,
+		dots: true,
 		responsive: {
 			0: {
 				items: 1
