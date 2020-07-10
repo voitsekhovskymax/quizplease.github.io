@@ -18,11 +18,11 @@ $(document).ready(function () {
 	$(".hamburger-menu, .menu-navbar .close").click(function () {
 		$(".menu-navbar").toggleClass("open");
 	});
-
+	
 	// Schedule Carousel
 	let stagePadding = 30;
 	let center = true;
-	if (window.innerWidth > 992) {
+	if (window.innerWidth > 991) {
 		center = false;
 		stagePadding = 0;
 	}
@@ -38,10 +38,13 @@ $(document).ready(function () {
 			0: {
 				items: 1
 			},
-			600: {
+			768: {
 				items: 2
 			},
-			1000: {
+			992: {
+				items: 3
+			},
+			1024: {
 				items: 3
 			}
 		}
@@ -64,7 +67,7 @@ $(document).ready(function () {
 	
 	// Instagram Carousel
 	var owl2 = $(".owl-carousel.insta-slider").owlCarousel({
-		loop: false,
+		loop: true,
 		// margin: 10,
 		center: false,
 		nav: true,
@@ -120,11 +123,13 @@ $(document).ready(function () {
 		}
 		
 		
+		let modal_name = $(this).attr("data-modal");
 		
-		$(".popup, .popup-content").addClass("active");
+		console.log(modal_name);
+		$("#" + modal_name).addClass("active");
 	});
 	
-	$(".close, .popup").on("click", function () {
+	$(".close ").on("click", function () {
 		$("iframe").attr("src", $(this).find("iframe").attr("src"));
 		
 		$(".popup, .popup-content").removeClass("active");
@@ -132,5 +137,26 @@ $(document).ready(function () {
 	
 	
 	
+	
+	$(".question-examples .get-answer").click(function () {
+		$(this).prev(".answer").toggle();
+	});
+	
+	
+	window.onscroll = function () {
+		myFunction();
+	};
+	
+	var header = document.getElementById("header");
+	
+	var sticky = header.offsetTop;
+	
+	function myFunction() {
+		if (window.pageYOffset > sticky) {
+			header.classList.add("sticky");
+		} else {
+			header.classList.remove("sticky");
+		}
+	}
 	
 });
