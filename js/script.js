@@ -50,7 +50,6 @@ $(document).ready(function () {
 		}
 	});
 	
-	$( "div span:first-child" ).
 	
 	$(".owl-filter-bar").on("click", ".owl-filter-bar-item", function () {
 		
