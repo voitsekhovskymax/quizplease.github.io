@@ -1,0 +1,779 @@
+@charset "UTF-8";
+/*Черный (Густой) Black (Heavy)*/
+@font-face {
+  font-family: "Akrobat-Black";
+  src: url("../fonts/akrobat/Akrobatblack.ttf");
+  font-weight: 900;
+  font-style: normal;
+}
+.store {
+  height: 100vh;
+  background-image: url("../images/store/bg1.png");
+}
+.store-main {
+  padding-top: 90px;
+}
+.store-main-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 230px;
+  object-fit: cover;
+}
+.store-main-title {
+  font-size: 32px;
+  text-align: center;
+  font-family: Akrobat-Black;
+  color: white;
+  text-transform: uppercase;
+}
+.store-hello {
+  overflow: hidden;
+}
+.store-hello .row-btns {
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.store-hello-title {
+  z-index: 2;
+  position: relative;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #FFFFFF;
+  max-width: 200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.store-hello-description {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
+  position: relative;
+  margin-bottom: 190px;
+  max-width: 240px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.store-hello-container {
+  position: relative;
+  padding-top: 15px;
+}
+.store-hello-container .store-vector-4 {
+  position: absolute;
+  top: 0;
+  left: 2%;
+  right: 2%;
+}
+.store-hello-container .store-vector-5 {
+  position: absolute;
+  top: 0;
+  left: 10%;
+  right: 2%;
+}
+.store-hello-container .store-vector-4-sm {
+  position: absolute;
+  top: 0;
+  right: 5%;
+}
+.store-hello-container .store-vector-5-sm {
+  position: absolute;
+  top: 0;
+  left: 5%;
+}
+.store-hello .btn-get-certificate {
+  background: #FFE400;
+  box-shadow: 0px 4px 0px #D29A21;
+  font-family: Akrobat-Black;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 24px;
+  position: relative;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 20px;
+  text-align: left;
+  color: #000000;
+  margin-right: -15px;
+}
+.store-hello .btn-get-certificate img {
+  transform: scale(1.2);
+  margin-top: 10px;
+}
+.store-hello .btn-get-merch {
+  background: #2AE2A3;
+  box-shadow: 0px 4px 0px #01A2A5;
+  font-family: Akrobat-Black;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  padding: 20px;
+  margin-left: -15px;
+}
+.store-certificates {
+  margin-top: 100px;
+}
+.store-certificates .row-certificate {
+  margin-bottom: 50px;
+}
+.store-certificates-title {
+  font-family: Akrobat-Black;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.store-certificates-description {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 80px;
+}
+.store-certificates .certificate-container {
+  border: 8px solid #fff;
+  box-sizing: border-box;
+}
+.store-certificates .certificate-container.pink {
+  border-color: #FC1AA3;
+}
+.store-certificates .certificate-container.yellow {
+  border-color: #FFE400;
+}
+.store-certificates .certificate-container.white {
+  border-color: #fff;
+}
+.store-certificates .certificate-type {
+  font-family: Akrobat-Black;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  margin-top: 40px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+.store-certificates .certificate-btn {
+  font-family: Akrobat-Black;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding: 15px 80px;
+  color: #000;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 25px;
+  display: block;
+  width: calc(100% - 40px);
+}
+.store-certificates .certificate-btn.pink {
+  background: #FC1AA3;
+  box-shadow: 0px 4px 0px #A70C55;
+  color: #FFFFFF;
+}
+.store-certificates .certificate-btn.yellow {
+  color: black;
+  background: #FFE400;
+  box-shadow: 0px 4px 0px #D29A21;
+}
+.store-certificates .certificate-btn.white {
+  color: black;
+  background: #F8F8F8;
+  box-shadow: 0px 4px 0px #CCCCCC;
+}
+.store-certificates .certificate-image {
+  margin: -50px auto 0;
+  display: block;
+}
+.store-certificates .certificate-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+.store-certificates .certificate-subtitle {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 29px;
+  padding: 0px 20px 20px;
+}
+.store .certificate-help .certificate-info {
+  margin-right: 0px;
+  margin-left: 0px;
+  background: #6C3AE7;
+  border: 8px solid #6C3AE7;
+  box-sizing: border-box;
+}
+.store .certificate-help .certificate-info-title {
+  font-family: Akrobat-Black;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  padding: 40px 20px 20px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.store .certificate-help .certificate-info-btn {
+  font-family: Akrobat-Black;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding: 15px 80px;
+  color: black;
+  background: #F8F8F8;
+  box-shadow: 0px 4px 0px #CCCCCC;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 50px;
+}
+.store .certificate-help .center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.store .store-merch-title {
+  font-family: Akrobat-Black;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.store .store-merch-description {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFFFFF;
+  margin-bottom: 72px;
+  text-align: center;
+}
+.store .store-merch-grid-item {
+  text-align: center;
+  padding-bottom: 90px;
+}
+.store .store-merch-grid-item-img {
+  border: 4px solid #6C3AE7;
+  box-sizing: border-box;
+  position: relative;
+}
+.store .store-merch-grid-item-img img {
+  display: block;
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+.store .store-merch-grid-item-img .store-badge {
+  background: #6C3AE7;
+  position: absolute;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #F3F4F7;
+  width: 120px;
+  height: 40px;
+  padding-left: 40px;
+  text-align: left;
+  bottom: 0px;
+  left: calc(50% - 60px);
+}
+.store .store-merch-grid-item-img .store-badge img {
+  width: 38px;
+  height: 38px;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+}
+.store .store-merch-grid-item-title {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  margin-top: 14px;
+  max-width: 100%;
+  word-break: break-all;
+}
+.store .store-merch-grid-item-price {
+  font-family: Akrobat-Black;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  margin-top: 14px;
+  justify-content: center;
+}
+.store .store-merch-grid-item-price img {
+  margin-left: 10px;
+  width: 11px;
+  height: 14px;
+}
+.store .store-merch-grid-item-btn {
+  background: #FC1AA3;
+  box-shadow: 0px 4px 0px #A70C55;
+  font-family: Akrobat-Black;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding: 15px 50px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #FFFFFF;
+  margin-top: 25px;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.store .store-how_to {
+  margin-bottom: 100px;
+}
+.store .store-how_to-title {
+  font-family: Akrobat-Black;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+.store .store-how_to-description {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+  max-width: 973px;
+  margin-bottom: 30px;
+}
+.store .store-how_to .how_to-collapse .layout {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  padding: 25px 20px;
+  border: 5px solid rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.store .store-how_to .how_to-collapse .question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.store .store-how_to .how_to-collapse .question img {
+  transition: all 0.2s ease;
+  margin-left: 15px;
+}
+.store .store-how_to .how_to-collapse .question.open img {
+  transform: rotateZ(180deg);
+}
+.store .store-how_to .how_to-collapse .answer {
+  margin-top: 30px;
+}
+
+#home-games-footer {
+  background-color: #1a1a1a;
+  padding: 10px;
+}
+#home-games-footer .to_up {
+  color: white;
+  background-color: #333;
+  border: none;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 19px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  border-radius: 5px;
+  width: 100%;
+  justify-content: center;
+}
+#home-games-footer .to_up svg {
+  color: white;
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+}
+#home-games-footer .menu {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+#home-games-footer .menu a {
+  color: #666;
+  margin-right: 10px;
+  text-decoration: none;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+#home-games-footer .any-questions {
+  color: #666;
+  margin-bottom: 10px;
+  text-decoration: none;
+  display: block;
+}
+#home-games-footer .footer-email {
+  display: block;
+  color: white;
+  font-family: Akrobat-Black;
+  font-size: 32px;
+  font-weight: 600;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+#home-games-footer .footer-phone {
+  display: block;
+  color: white;
+  font-family: Akrobat-Black;
+  font-size: 32px;
+  font-weight: 600;
+  text-decoration: none;
+}
+#home-games-footer .footer-socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#home-games-footer .footer-socials svg {
+  width: 36px;
+  height: 36px;
+  color: #666;
+  border: 1px solid #666;
+  border-radius: 50px;
+  margin: 15px;
+  padding: 7px;
+}
+#home-games-footer .personal-data a {
+  color: #666;
+  margin-bottom: 10px;
+  display: block;
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  .store-hello-container {
+    padding-top: 50px;
+  }
+  .store-hello-container .store-vector-4 {
+    top: 0;
+    left: 2%;
+    right: 2%;
+  }
+  .store-hello-container .store-vector-5 {
+    top: 0;
+    left: 2%;
+    right: 2%;
+  }
+  .store-hello-title {
+    font-size: 32px;
+    line-height: 34px;
+    max-width: 380px;
+  }
+  .store-hello-description {
+    max-width: 451px;
+    font-size: 16px;
+    line-height: 21px;
+  }
+}
+@media (min-width: 992px) {
+  #home-games-footer .footer-socials {
+    justify-content: flex-end;
+  }
+}
+@media (min-width: 1200px) {
+  .store-main {
+    padding-top: 200px;
+  }
+
+  .store-hello-title {
+    z-index: 2;
+    position: relative;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 44px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  .store-hello-description {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    position: relative;
+    margin-bottom: 190px;
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .store-hello-container {
+    position: relative;
+    padding-top: 50px;
+  }
+  .store-hello-container .store-vector-4 {
+    position: absolute;
+    top: 0;
+    left: 2%;
+    right: 2%;
+  }
+  .store-hello-container .store-vector-5 {
+    position: absolute;
+    top: 0;
+    left: 10%;
+    right: 2%;
+  }
+  .store-hello .btn-get-certificate {
+    background: #FFE400;
+    box-shadow: 0px 4px 0px #D29A21;
+    font-family: Akrobat-Black;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 34px;
+    line-height: 36px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 26px 41px;
+    width: 100%;
+    text-align: left;
+    color: #000000;
+    height: 124px;
+  }
+  .store-hello .btn-get-certificate img {
+    position: absolute;
+    top: -30px;
+    right: 0;
+  }
+  .store-hello .btn-get-merch {
+    background: #2AE2A3;
+    box-shadow: 0px 4px 0px #01A2A5;
+    font-family: Akrobat-Black;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 34px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    padding: 26px 41px;
+    width: 100%;
+    height: 124px;
+  }
+  .store-hello .btn-get-merch img {
+    position: absolute;
+    top: -90px;
+    right: -50px;
+  }
+  .store-certificates-title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .store-certificates-desciption {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .store-certificates .certificate-image {
+    position: absolute;
+    top: -50px;
+  }
+  .store-certificates .certificate-btn {
+    font-family: Akrobat-Black;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    padding: 15px 80px;
+    color: #000;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+  }
+  .store-certificates .certificate-btn.pink {
+    background: #FC1AA3;
+    box-shadow: 0px 4px 0px #A70C55;
+    color: #FFFFFF;
+  }
+  .store-certificates .certificate-btn.yellow {
+    color: black;
+    background: #FFE400;
+    box-shadow: 0px 4px 0px #D29A21;
+  }
+  .store-certificates .certificate-btn.white {
+    color: black;
+    background: #F8F8F8;
+    box-shadow: 0px 4px 0px #CCCCCC;
+  }
+  .store-certificates .certificate-subtitle {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .store .certificate-help .certificate-info-title {
+    font-size: 30px;
+    line-height: 34px;
+    margin: 30px 0px 30px 75px;
+  }
+  .store .store-merch-title {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .store .store-merch-description {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 72px;
+  }
+  .store .store-merch-grid-item {
+    padding-bottom: 45px;
+  }
+  .store .store-merch-grid-item-img {
+    border: 8px solid #6C3AE7;
+  }
+  .store .store-merch-grid-item-img img {
+    height: 300px;
+  }
+  .store .store-merch-grid-item-img .store-badge {
+    width: 145px;
+    height: 45px;
+    padding-left: 46px;
+    left: calc(50% - 72.5px);
+  }
+  .store .store-merch-grid-item-img .store-badge img {
+    width: 38px;
+    height: 38px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+  }
+  .store .store-merch-grid-item-title {
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .store .store-merch-grid-item-price {
+    font-size: 36px;
+    line-height: 40px;
+  }
+  .store .store-merch-grid-item-price img {
+    margin-left: 10px;
+    width: auto;
+    height: auto;
+  }
+  .store .store-merch-grid-item-btn {
+    padding: 15px 80px;
+  }
+  .store .store-how_to-title {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .store .store-how_to-description {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .store .store-how_to .how_to-collapse .layout {
+    padding: 35px 40px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  #home-games-footer .footer-socials {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  #home-games-footer .personal-data a {
+    color: #666;
+    margin-bottom: 10px;
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=store.css.map */
