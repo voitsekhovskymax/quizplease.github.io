@@ -23,11 +23,8 @@
     <link rel="apple-touch-icon" sizes="144x144" href="https://quizplease.ru/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="https://quizplease.ru/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="https://quizplease.ru/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="https://quizplease.ru/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://quizplease.ru/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="https://quizplease.ru/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://quizplease.ru/favicon-16x16.png">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;800;900&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="libs/owl/assets/owl.carousel.min.css">
@@ -528,7 +525,7 @@
                         <div class="store-merch-grid-item-price">
                             1000 <img src="./images/store/val.png" alt="Рубль">
                         </div>
-                        <button class="store-merch-grid-item-btn">Хочу!</button>
+                        <button class="store-merch-grid-item-btn show-modal1">Хочу!</button>
                     </div>
                 </div>
                 <div class="col-xl -3 col-lg-4 col-6">
@@ -546,7 +543,7 @@
                         <div class="store-merch-grid-item-price">
                             1600 <img src="./images/store/val.png" alt="Рубль">
                         </div>
-                        <button class="store-merch-grid-item-btn">Хочу!</button>
+                        <button class="store-merch-grid-item-btn show-modal2">Хочу!</button>
                     </div>
                 </div>
                 <div class="col-xl -3 col-lg-4 col-6">
@@ -723,6 +720,242 @@
             </div>
         </div>
     </section>
+    <!-- MODALS -->
+    <div id="modal1" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-close">
+                <img src="./images/store/close.png" alt="Закрыть окно">
+            </div>
+            <div class="modal-form">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="product-img">
+                            <img src="./images/store/image6b.png" alt="Продукт">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="product-title">
+                            Шарф «Сообразительность»
+                        </div>
+                        <div class="product-description">
+                            Шарф настолько объёмный и тёплый, что способен самостоятельно защитить все стратегически
+                            важные
+                            места (шея, лицо, уши, голова ваша, голова соседа).
+                            <br>
+                            <br>
+                            Надпись «Сообразительность» лишь подчеркнёт вашу безусловную причастность к
+                            интеллектуальному
+                            бомонду.
+                        </div>
+                        <div class="product-meta row">
+                            <div class="product-meta-item col-lg-6">
+                                <div class="product-meta-item-label">
+                                    Длина
+                                </div>
+                                <div class="product-meta-item-value">
+                                    170 см
+                                </div>
+                            </div>
+                            <div class="product-meta-item col-lg-6">
+                                <div class="product-meta-item-label">
+                                    Пол
+                                </div>
+                                <div class="product-meta-item-value">
+                                    Унисекс
+                                </div>
+                            </div>
+                            <div class="product-meta-item col-lg-6">
+                                <div class="product-meta-item-label">
+                                    Ширина
+                                </div>
+                                <div class="product-meta-item-value">
+                                    20 см
+                                </div>
+                            </div>
+                            <div class="product-meta-item col-lg-6">
+                                <div class="product-meta-item-label">
+                                    Состав
+                                </div>
+                                <div class="product-meta-item-value">
+                                    Шерсть
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-size">
+                            Выберите размер
+                            <select name="product-size" class="order-select">
+                                <option value="first">Первый размер</option>
+                                <option value="second">Второй размер</option>
+                                <option value="third">Третий размер</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="separator"></div>
+                <div class="product-form">
+                    <div class="product-form-title">
+                        Доставка
+                    </div>
+                    <select name="order_type" id="order_type1" class="order-select">
+                        <option value="by_game">Доставить на игру</option>
+                        <option value="by_courier">Доставить курьером</option>
+                    </select>
+                    <div class="by-courier">
+                        <div class="row">
+                            <div class="col-lg-12 mb-4">
+                                <input type="text" class="order-input" placeholder="Город, улица, дом">
+                            </div>
+                            <div class="col-lg-4 mb-4">
+                                <input type="text" class="order-input" placeholder="Подьезд">
+                            </div>
+                            <div class="col-lg-4 mb-4">
+                                <input type="text" class="order-input" placeholder="Квартира\Офис">
+                            </div>
+                            <div class="col-lg-4 mb-4">
+                                <input type="text" class="order-input" placeholder="Этаж">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="separator"></div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <input type="text" class="order-input" placeholder="Имя">
+                        </div>
+                        <div class="col-lg-6">
+                            <input type="text" class="order-input" placeholder="Телефон">
+                        </div>
+                        <div class="col-lg-12">
+                            <input type="email" class="order-input" placeholder="Email">
+                        </div>
+                    </div>
+                    <button class="yellow-button">Точно беру!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal2" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-close">
+                <img src="./images/store/close.png" alt="Закрыть окно">
+            </div>
+            <div class="modal-form">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="product-images owl-carousel">
+                            <div class="product-image-item">
+                                <img src="./images/store/image6b.png" alt="Продукт">
+                            </div>
+                            <div class="product-image-item">
+                                <img src="./images/store/Rectangle70.png" alt="Продукт">
+                            </div>
+                            <div class="product-image-item">
+                                <img src="./images/store/image6b.png" alt="Продукт">
+                            </div>
+                            <div class="product-image-item">
+                                <img src="./images/store/Rectangle70.png" alt="Продукт">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="product-title">
+                            Шарф «Сообразительность»
+                        </div>
+                        <div class="product-description">
+                            Шарф настолько объёмный и тёплый, что способен самостоятельно защитить все стратегически
+                            важные
+                            места (шея, лицо, уши, голова ваша, голова соседа).
+                            <br>
+                            <br>
+                            Надпись «Сообразительность» лишь подчеркнёт вашу безусловную причастность к
+                            интеллектуальному
+                            бомонду.
+                        </div>
+                        <div class="product-meta row">
+                            <div class="product-meta-item col-lg-6">
+                                <div class="product-meta-item-label">
+                                    Длина
+                                </div>
+                                <div class="product-meta-item-value">
+                                    170 см
+                                </div>
+                            </div>
+                            <div class="product-meta-item col-lg-6">
+                                <div class="product-meta-item-label">
+                                    Пол
+                                </div>
+                                <div class="product-meta-item-value">
+                                    Унисекс
+                                </div>
+                            </div>
+                            <div class="product-meta-item col-lg-6">
+                                <div class="product-meta-item-label">
+                                    Ширина
+                                </div>
+                                <div class="product-meta-item-value">
+                                    20 см
+                                </div>
+                            </div>
+                            <div class="product-meta-item col-lg-6">
+                                <div class="product-meta-item-label">
+                                    Состав
+                                </div>
+                                <div class="product-meta-item-value">
+                                    Шерсть
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-size">
+                            Выберите размер
+                            <select name="product-size" id="product-size" class="order-select">
+                                <option value="first">Первый размер</option>
+                                <option value="second">Второй размер</option>
+                                <option value="third">Третий размер</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="separator"></div>
+                <div class="product-form">
+                    <div class="product-form-title">
+                        Доставка
+                    </div>
+                    <select name="order_type" id="order_type2" class="order-select">
+                        <option value="by_game">Доставить на игру</option>
+                        <option value="by_courier">Доставить курьером</option>
+                    </select>
+                    <div class="by-courier">
+                        <div class="row">
+                            <div class="col-lg-12 mb-4">
+                                <input type="text" class="order-input" placeholder="Город, улица, дом">
+                            </div>
+                            <div class="col-lg-4 mb-4">
+                                <input type="text" class="order-input" placeholder="Подьезд">
+                            </div>
+                            <div class="col-lg-4 mb-4">
+                                <input type="text" class="order-input" placeholder="Квартира\Офис">
+                            </div>
+                            <div class="col-lg-4 mb-4">
+                                <input type="text" class="order-input" placeholder="Этаж">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="separator"></div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <input type="text" class="order-input" placeholder="Имя" id="order-name">
+                        </div>
+                        <div class="col-lg-6">
+                            <input type="text" class="order-input" placeholder="Телефон" id="order-phone">
+                        </div>
+                        <div class="col-lg-12">
+                            <input type="email" class="order-input" placeholder="Email" id="order-email">
+                        </div>
+                    </div>
+                    <button class="yellow-button">Точно беру!</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </main>
 <footer id="home-games-footer">
     <div class="container">
