@@ -935,12 +935,15 @@
   }
 
   .modal-overlay .modal-content {
-    padding: 50px 100px;
-    max-width: 1000px;
-    min-width: 300px;
+    padding: 50px 100px !important;
+    max-width: 900px !important;
+    min-width: 300px !important;
+
     .modal-form {
       max-width: 100%;
     }
+
+
   }
   #home-games-footer .footer-socials {
     justify-content: flex-end;
@@ -1234,7 +1237,7 @@
     }
 
     .product-size {
-      text-align: left;
+      text-align: left !important;
     }
   }
 
@@ -1284,7 +1287,7 @@
       right: 0;
       top: -50px;
       background: rgb(255, 255, 255);
-      background: linear-gradient(-1deg, white 48%, transparent 50%);
+      background: linear-gradient(-2deg, white 48%, transparent 50%);
       height: 50px;
     }
 
@@ -1295,8 +1298,50 @@
       right: 0;
       bottom: -50px;
       background: rgb(255, 255, 255);
-      background: linear-gradient(1deg, transparent 48%, white 50%);
+      background: linear-gradient(2deg, transparent 48%, white 50%);
       height: 50px;
+    }
+
+    .modal-title {
+      font-family: Akrobat-Black;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 40px;
+      line-height: 48px;
+      text-align: center;
+      max-width: 472px;
+      color: #212226;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    .modal-form {
+      label {
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: #212226;
+        margin-bottom: 10px;
+        display: block;
+
+      }
+
+      .order-input {
+        width: 100%;
+      }
+
+      .order-select {
+        width: 100%;
+      }
+
+      .yellow-button {
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+        margin-top: 15px;
+      }
     }
 
     .modal-close {
@@ -1515,6 +1560,14 @@
     .by-courier {
       display: none;
       margin-top: 30px;
+
+      &.active {
+        display: block;
+      }
+    }
+
+    .by-delivery {
+      display: none;
 
       &.active {
         display: block;

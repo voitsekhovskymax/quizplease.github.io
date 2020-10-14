@@ -409,7 +409,7 @@
                                     Сертификат на игру в баре <br/>
                                     на 2, 4, 6, или 9 человек
                                 </div>
-                                <button class="certificate-btn pink">Беру!</button>
+                                <button class="certificate-btn pink show-modal-certificate">Беру!</button>
                             </div>
                         </div>
                     </div>
@@ -440,7 +440,7 @@
                                     Сертификат на несколько игр <br/>
                                     на 1, 2, 3, 4 или 5 игр
                                 </div>
-                                <button class="certificate-btn yellow">Беру!</button>
+                                <button class="certificate-btn yellow show-modal-certificate-some">Беру!</button>
                             </div>
                         </div>
                     </div>
@@ -953,6 +953,155 @@
                     </div>
                     <button class="yellow-button">Точно беру!</button>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal-certificate" class="modal-overlay ">
+        <div class="modal-content">
+            <div class="modal-close">
+                <img src="./images/store/close.png" alt="Закрыть окно">
+            </div>
+            <div class="modal-title">
+                Сертификат для офлайн-игр на 2,4,6 или 9 человек
+            </div>
+            <div class="modal-form">
+                <div class="row mt-5">
+                    <div class="col-lg-6">
+                        <label for="peoples_count">Количество человек в команде</label>
+                        <select name="peoples_count" id="peoples_count" class="order-select">
+                            <option value="2">2</option>
+                            <option value="4">4</option>
+                            <option value="6">6</option>
+                            <option value="9">9</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-6">
+                        <label for="order-certificate-type">Вид сертификата</label>
+                        <select name="order-certificate-type" id="order-certificate-type" class="order-select">
+                            <option value="email">Электронный</option>
+                            <option value="paper">Бумажный</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="by-delivery">
+                    <div class="separator"></div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="product-form-title">
+                                Доставка
+                            </div>
+                            <select name="order_type" id="order_type3" class="order-select">
+                                <option value="by_game">Доставить на игру</option>
+                                <option value="by_courier">Доставить курьером</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="by-courier">
+                        <div class="row">
+                            <div class="col-lg-12 mb-4">
+                                <input type="text" class="order-input" placeholder="Город, улица, дом">
+                            </div>
+                            <div class="col-lg-4 mb-4">
+                                <input type="text" class="order-input" placeholder="Подьезд">
+                            </div>
+                            <div class="col-lg-4 mb-4">
+                                <input type="text" class="order-input" placeholder="Квартира\Офис">
+                            </div>
+                            <div class="col-lg-4 mb-4">
+                                <input type="text" class="order-input" placeholder="Этаж">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="separator"></div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <input type="text" class="order-input" placeholder="Имя" id="order-name">
+                    </div>
+                    <div class="col-lg-6">
+                        <input type="text" class="order-input" placeholder="Телефон" id="order-phone">
+                    </div>
+                    <div class="col-lg-12">
+                        <input type="email" class="order-input" placeholder="Email" id="order-email">
+                    </div>
+                </div>
+                <button class="yellow-button">Точно беру!</button>
+            </div>
+        </div>
+    </div>
+    <div id="modal-certificate-some" class="modal-overlay ">
+        <div class="modal-content">
+            <div class="modal-close">
+                <img src="./images/store/close.png" alt="Закрыть окно">
+            </div>
+            <div class="modal-title">
+                Сертификат
+                на несколько игр
+            </div>
+            <div class="modal-form">
+                <div class="row mt-5">
+                    <div class="col-lg-6">
+                        <label for="peoples_count">Количество человек в команде</label>
+                        <select name="peoples_count" id="peoples_count" class="order-select">
+                            <option value="2">2</option>
+                            <option value="4">4</option>
+                            <option value="6">6</option>
+                            <option value="9">9</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-6">
+                        <label for="order-certificate-type">Вид сертификата</label>
+                        <select name="order-certificate-type" id="order-certificate-type" class="order-select">
+                            <option value="email">Электронный</option>
+                            <option value="paper">Бумажный</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="by-delivery">
+                    <div class="separator"></div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="product-form-title">
+                                Доставка
+                            </div>
+                            <select name="order_type" id="order_type3" class="order-select">
+                                <option value="by_game">Доставить на игру</option>
+                                <option value="by_courier">Доставить курьером</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="by-courier">
+                        <div class="row">
+                            <div class="col-lg-12 mb-4">
+                                <input type="text" class="order-input" placeholder="Город, улица, дом">
+                            </div>
+                            <div class="col-lg-4 mb-4">
+                                <input type="text" class="order-input" placeholder="Подьезд">
+                            </div>
+                            <div class="col-lg-4 mb-4">
+                                <input type="text" class="order-input" placeholder="Квартира\Офис">
+                            </div>
+                            <div class="col-lg-4 mb-4">
+                                <input type="text" class="order-input" placeholder="Этаж">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="separator"></div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <input type="text" class="order-input" placeholder="Имя" id="order-name">
+                    </div>
+                    <div class="col-lg-6">
+                        <input type="text" class="order-input" placeholder="Телефон" id="order-phone">
+                    </div>
+                    <div class="col-lg-12">
+                        <input type="email" class="order-input" placeholder="Email" id="order-email">
+                    </div>
+                </div>
+                <button class="yellow-button">Точно беру!</button>
             </div>
         </div>
     </div>
