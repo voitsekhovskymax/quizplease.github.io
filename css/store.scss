@@ -654,16 +654,259 @@
         font-size: 16px;
         line-height: 21px;
       }
+
+      .btn-get-certificate {
+        font-size: 34px;
+        line-height: 36px;
+        padding: 26px 50px;
+        max-width: 462px;
+        height: 124px;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+        margin-bottom: 64px;
+
+        img {
+          transform: scale(1);
+          margin-top: 0px;
+          position: absolute;
+          top: -20px;
+          right: 0;
+        }
+      }
+
+      .btn-get-merch {
+        font-size: 34px;
+        line-height: 36px;
+        padding: 26px 50px;
+        max-width: 462px;
+        height: 124px;
+        margin-bottom: 64px;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+        text-align: left;
+
+        img {
+          transform: scale(0.8);
+          margin-top: 0px;
+          position: absolute;
+          top: -70px;
+          right: -30px;
+        }
+      }
+    }
+
+    &-certificates {
+      &-title {
+        font-size: 32px;
+        line-height: 34px;
+      }
+
+      &-description {
+        font-size: 16px;
+        line-height: 21px;
+      }
+
+      .certificate-subtitle {
+        font-size: 22px;
+        line-height: 28px;
+        padding: 0px 0px 20px 0px;
+
+      }
+
+      .certificate-description {
+        font-size: 16px;
+        line-height: 21px;
+      }
+
+      .certificate-type {
+        margin-top: 0px;
+      }
+    }
+
+    .certificate-help {
+      margin-bottom: 120px;
+
+      .certificate-info-title {
+        font-size: 30px;
+        line-height: 34px;
+        text-align: left;
+        padding: 20px 20px 20px;
+
+      }
+
+      .certificate-info-btn {
+        margin-bottom: inherit;
+      }
+    }
+
+    .store-merch {
+      &-title {
+        font-size: 32px;
+        line-height: 34px;
+
+      }
+
+      &-description {
+        font-size: 16px;
+        line-height: 21px;
+      }
+
+      &-grid {
+        &-item {
+          &-title {
+            height: 50px;
+            font-size: 18px;
+            line-height: 26px;
+          }
+
+          &-price {
+            font-size: 32px;
+            line-height: 34px;
+
+            img {
+              width: 17px;
+              height: 21px;
+            }
+          }
+
+          &-img {
+
+
+            img {
+              height: 300px;
+            }
+          }
+        }
+      }
+    }
+
+    .store-how_to {
+      &-title {
+        font-size: 32px;
+        line-height: 34px;
+      }
+
+      &-description {
+        font-size: 16px;
+        line-height: 21px;
+      }
     }
   }
 }
 
-@media (min-width: 992px) {
-  #home-games-footer .footer-socials {
-    justify-content: flex-end;
 
+@media (min-width: 992px) {
+
+  .store {
+    &-hello {
+      &-title {
+        font-size: 40px;
+        line-height: 44px;
+        max-width: 500px;
+      }
+
+      &-description {
+        font-size: 20px;
+        line-height: 28px;
+        max-width: 530px;
+      }
+    }
+
+    &-certificates {
+      &-title {
+        font-size: 40px;
+        line-height: 40px;
+      }
+
+      &-description {
+        font-size: 20px;
+        line-height: 24px;
+      }
+
+      .certificate-type {
+        margin-top: 40px;
+      }
+    }
+
+    .certificate-help {
+      .certificate-info-title {
+
+
+        padding: 60px 0px 60px 60px;
+      }
+    }
+
+    .store-merch {
+      &-grid {
+        &-item {
+
+          &-title {
+            font-size: 22px;
+            line-height: 26px;
+          }
+
+          &-img {
+            img {
+              height: 330px;
+            }
+          }
+
+          &-price {
+            font-size: 36px;
+            line-height: 40px;
+
+            img {
+              width: 21px;
+              height: 26px;
+            }
+          }
+
+          &-btn {
+            padding: 15px 80px;
+
+          }
+        }
+      }
+
+      &-title {
+        font-size: 40px;
+        line-height: 40px;
+      }
+
+      &-description {
+        font-size: 20px;
+        line-height: 24px;
+      }
+    }
+
+    .store-how_to {
+      &-title {
+        font-size: 40px;
+        line-height: 40px;
+      }
+
+      &-description {
+        font-size: 20px;
+        line-height: 24px;
+      }
+
+      .how_to-collapse {
+        .layout {
+          font-size: 20px;
+          line-height: 24px;
+        }
+      }
+    }
   }
 
+
+  #home-games-footer .footer-socials {
+    justify-content: flex-end;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -780,18 +1023,19 @@
     &-certificates {
 
       &-title {
-        font-size: 24px;
-        line-height: 28px;
+        font-size: 40px;
+        line-height: 40px;
       }
 
       &-desciption {
-        font-size: 16px;
-        line-height: 21px;
+        font-size: 20px;
+        line-height: 24px;
       }
 
       .certificate-image {
         position: absolute;
         top: -50px;
+        margin: 0px;
 
       }
 
@@ -844,6 +1088,7 @@
         font-size: 30px;
         line-height: 34px;
         margin: 30px 0px 30px 75px;
+        padding: 0px;
 
       }
     }
