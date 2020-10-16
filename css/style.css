@@ -82,7 +82,7 @@
 }
 
 body {
-    font-family: 'Gilroy-Regular', sans-serif;
+    font-family: Raleway;
     background-color: #000423;
     color: white;
 }
@@ -314,13 +314,6 @@ body {
 
 }
 
-.container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
 
 
 .video-instruction-box-lg {
@@ -330,8 +323,6 @@ body {
 .owl-nav {
     display: none;
 }
-
-
 
 
 /* THEME */
@@ -470,8 +461,8 @@ body {
 
 .link-navbar {
     display: flex;
-    padding-right: 10px;
-    padding-left: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
     align-items: center;
     transition: all 100ms ease-in-out;
     color: #fff;
@@ -479,12 +470,20 @@ body {
     line-height: 30px;
     font-weight: 500;
     text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+
 }
 
 .link-navbar:hover {
     opacity: 0.75;
     color: white;
     text-decoration: none;
+
+}
+
+.link-navbar.active {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+
 }
 
 .location-icon {
@@ -2451,8 +2450,8 @@ body {
     }
 
     .link-navbar {
-        padding-right: 8px;
-        padding-left: 8px;
+        margin-right: 8px;
+        margin-left: 8px;
     }
 }
 
@@ -2474,8 +2473,8 @@ body {
     }
 
     .link-navbar {
-        padding-right: 10px;
-        padding-left: 10px;
+        margin-right: 10px;
+        margin-left: 10px;
     }
 
     .schedule .game-image img {

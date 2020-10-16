@@ -190,6 +190,12 @@ $(document).ready(function () {
         });
     }
 //    STORE PAGE
+
+    $('.modal-close').click(function () {
+        $(this).closest('.modal-overlay').removeClass('active');
+        $('body').removeClass('modal-open');
+    });
+
     $('.show-modal1').click(function () {
         $('#modal1').addClass('active');
         $('body').addClass('modal-open');
@@ -200,13 +206,12 @@ $(document).ready(function () {
 
     });
 
-    $('.modal-close').click(function () {
-        $(this).closest('.modal-overlay').removeClass('active');
-        $('body').removeClass('modal-open');
-    });
-
     $('.show-modal-certificate').click(function () {
         $('#modal-certificate').addClass('active');
+        $('body').addClass('modal-open');
+    });
+    $('.show-modal-certificate-online').click(function () {
+        $('#modal-certificate-online').addClass('active');
         $('body').addClass('modal-open');
     });
     $('.show-modal-certificate-some').click(function () {
@@ -224,16 +229,19 @@ $(document).ready(function () {
     });
 
     $('select[name="order_type"]').change(function () {
-        $('.by-courier').removeClass('active');
+        let courier = $(this).closest('.modal-overlay').find('.by-courier');
+        courier.removeClass('active');
         if ($(this).val() === 'by_courier') {
-            $('.by-courier').addClass('active');
+            courier.addClass('active');
         }
     });
 
     $('select[name="order-certificate-type"]').change(function () {
-        $('.by-delivery').removeClass('active');
+        let delivery = $(this).closest('.modal-overlay').find('.by-delivery');
+
+        delivery.removeClass('active');
         if ($(this).val() === 'paper') {
-            $('.by-delivery').addClass('active');
+            delivery.addClass('active');
         }
     });
 

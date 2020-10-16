@@ -335,7 +335,7 @@
                 <a href="/rating" class="link-navbar">
                     <div>Рейтинг</div>
                 </a>
-                <a href="/certificates" class="link-navbar">
+                <a href="/certificates" class="link-navbar active">
                     <div>Сертификаты</div>
                 </a>
                 <a href="/certificates" class="link-navbar">
@@ -352,6 +352,8 @@
     </div>
 </header>
 <main id="main">
+    <img src="./images/store/bgPage.png" alt="Квиз плиз!" class="top-bg">
+
     <section class="store-main">
         <!--        <img src="./images/store/image7.png" alt="Квиз, плиз! Магазин" class="store-main-image">-->
         <h1 class="store-main-title">Магазин</h1>
@@ -472,7 +474,7 @@
                                     Сертификат на онлайн-игру <br/>
                                     на 1 команду
                                 </div>
-                                <button class="certificate-btn white">Беру!</button>
+                                <button class="certificate-btn white show-modal-certificate-online">Беру!</button>
                             </div>
                         </div>
                     </div>
@@ -514,9 +516,9 @@
                 У нас есть сертификаты на все случаи жизни
             </p>
             <div class="row store-merch-grid">
-                <div class="col-xl -3 col-lg-4 col-6">
+                <div class="col-xl-3 col-lg-4 col-6">
                     <div class="store-merch-grid-item">
-                        <div class="store-merch-grid-item-img">
+                        <div class="store-merch-grid-item-img show-modal1">
                             <img src="./images/store/Rectangle70.png" alt="Мерч">
                         </div>
                         <div class="store-merch-grid-item-title">
@@ -528,9 +530,9 @@
                         <button class="store-merch-grid-item-btn show-modal1">Хочу!</button>
                     </div>
                 </div>
-                <div class="col-xl -3 col-lg-4 col-6">
+                <div class="col-xl-3 col-lg-4 col-6">
                     <div class="store-merch-grid-item">
-                        <div class="store-merch-grid-item-img">
+                        <div class="store-merch-grid-item-img show-modal2">
                             <img src="./images/store/image6.png" alt="Мерч">
                             <div class="store-badge">
                                 <img src="./images/store/Vector.png" alt="Почти все раскупили!">
@@ -546,7 +548,7 @@
                         <button class="store-merch-grid-item-btn show-modal2">Хочу!</button>
                     </div>
                 </div>
-                <div class="col-xl -3 col-lg-4 col-6">
+                <div class="col-xl-3 col-lg-4 col-6">
                     <div class="store-merch-grid-item">
                         <div class="store-merch-grid-item-img">
                             <img src="./images/store/Rectangle70.png" alt="Мерч">
@@ -560,7 +562,7 @@
                         <button class="store-merch-grid-item-btn">Хочу!</button>
                     </div>
                 </div>
-                <div class="col-xl -3 col-lg-4 col-6">
+                <div class="col-xl-3 col-lg-4 col-6">
                     <div class="store-merch-grid-item">
                         <div class="store-merch-grid-item-img">
                             <img src="./images/store/image6.png" alt="Мерч">
@@ -578,7 +580,7 @@
                         <button class="store-merch-grid-item-btn">Хочу!</button>
                     </div>
                 </div>
-                <div class="col-xl -3 col-lg-4 col-6">
+                <div class="col-xl-3 col-lg-4 col-6">
                     <div class="store-merch-grid-item">
                         <div class="store-merch-grid-item-img">
                             <img src="./images/store/Rectangle70.png" alt="Мерч">
@@ -592,7 +594,7 @@
                         <button class="store-merch-grid-item-btn">Хочу!</button>
                     </div>
                 </div>
-                <div class="col-xl -3 col-lg-4 col-6">
+                <div class="col-xl-3 col-lg-4 col-6">
                     <div class="store-merch-grid-item">
                         <div class="store-merch-grid-item-img">
                             <img src="./images/store/image6.png" alt="Мерч">
@@ -610,7 +612,7 @@
                         <button class="store-merch-grid-item-btn">Хочу!</button>
                     </div>
                 </div>
-                <div class="col-xl -3 col-lg-4 col-6">
+                <div class="col-xl-3 col-lg-4 col-6">
                     <div class="store-merch-grid-item">
                         <div class="store-merch-grid-item-img">
                             <img src="./images/store/Rectangle70.png" alt="Мерч">
@@ -624,7 +626,7 @@
                         <button class="store-merch-grid-item-btn">Хочу!</button>
                     </div>
                 </div>
-                <div class="col-xl -3 col-lg-4 col-6">
+                <div class="col-xl-3 col-lg-4 col-6">
                     <div class="store-merch-grid-item">
                         <div class="store-merch-grid-item-img">
                             <img src="./images/store/image6.png" alt="Мерч">
@@ -956,7 +958,7 @@
             </div>
         </div>
     </div>
-    <div id="modal-certificate" class="modal-overlay ">
+    <div id="modal-certificate" class="modal-overlay">
         <div class="modal-content">
             <div class="modal-close">
                 <img src="./images/store/close.png" alt="Закрыть окно">
@@ -1013,7 +1015,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="separator"></div>
                 <div class="row">
                     <div class="col-lg-6">
@@ -1088,9 +1089,32 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="separator"></div>
                 <div class="row">
+                    <div class="col-lg-6">
+                        <input type="text" class="order-input" placeholder="Имя" id="order-name">
+                    </div>
+                    <div class="col-lg-6">
+                        <input type="text" class="order-input" placeholder="Телефон" id="order-phone">
+                    </div>
+                    <div class="col-lg-12">
+                        <input type="email" class="order-input" placeholder="Email" id="order-email">
+                    </div>
+                </div>
+                <button class="yellow-button">Точно беру!</button>
+            </div>
+        </div>
+    </div>
+    <div id="modal-certificate-online" class="modal-overlay ">
+        <div class="modal-content">
+            <div class="modal-close">
+                <img src="./images/store/close.png" alt="Закрыть окно">
+            </div>
+            <div class="modal-title">
+                Сертификат на онлайн-игру на 1 команду
+            </div>
+            <div class="modal-form">
+                <div class="row mt-5">
                     <div class="col-lg-6">
                         <input type="text" class="order-input" placeholder="Имя" id="order-name">
                     </div>

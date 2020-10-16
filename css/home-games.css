@@ -34,11 +34,12 @@
   color: #FFFFFF;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   padding: 0px 15px;
 }
 .home-games-page .section-info-grid {
   overflow: hidden;
+  padding-bottom: 50px;
 }
 .home-games-page .section-info-grid .row.owl-carousel {
   margin-right: 0px;
@@ -47,7 +48,7 @@
 .home-games-page .section-info-grid .grid-item {
   background: #E20078;
   padding: 45px 18px;
-  height: 350px;
+  height: 390px;
   position: relative;
 }
 .home-games-page .section-info-grid .grid-item-title {
@@ -477,6 +478,7 @@
   transition: all 0.5s ease;
   outline: none;
   border: none;
+  position: relative;
   cursor: pointer;
 }
 .yellow-button:hover {
@@ -507,7 +509,7 @@
     padding-right: 0px;
   }
   .home-games-page .section-games .games-container .game-item {
-    padding: 24px;
+    padding: 29px;
   }
   .home-games-page .section-games .games-container .game-item .rose-button {
     right: 24px;
@@ -580,6 +582,7 @@
   }
   .home-games-page .section-games .games-container .game-item .rose-button {
     width: auto;
+    left: calc(50% - 60px);
   }
   .home-games-page .section-games .games-container .game-title {
     font-size: 32px;
@@ -598,56 +601,61 @@
   }
 }
 @media (min-width: 1200px) {
+  .home-games-page .main-section-title {
+    margin-top: 230px;
+    margin-bottom: 40px;
+  }
   .home-games-page .section-info-grid .grid-item .z-index-show .blank1 {
     position: absolute;
-    width: 160.6px;
-    height: 89.86px;
+    width: auto;
+    height: auto;
     left: -40px;
     top: 200px;
   }
   .home-games-page .section-info-grid .grid-item .z-index-show .comp {
     position: absolute;
-    width: 150px;
-    height: 150px;
+    width: auto;
+    height: auto;
     right: 30px;
     bottom: 30px;
   }
   .home-games-page .section-info-grid .grid-item .z-index-show .sandwich {
     position: absolute;
-    width: 150px;
-    height: 150px;
-    left: 220px;
-    top: -58px;
+    width: auto;
+    height: auto;
+    left: 200px;
+    top: -70px;
   }
   .home-games-page .section-info-grid .grid-item .z-index-show .cat {
     position: absolute;
-    width: 256px;
-    height: 192px;
+    width: auto;
+    height: auto;
     right: -40px;
     bottom: 0;
   }
   .home-games-page .section-info-grid .grid-item .z-index-show .seeds3 {
     position: absolute;
-    width: 81.8px;
-    height: 151.68px;
     left: -18px;
-    bottom: 0;
+    bottom: 16px;
   }
   .home-games-page .section-info-grid .grid-item .z-index-show .radio {
     position: absolute;
-    width: 175px;
-    height: 190px;
+    width: auto;
+    height: auto;
     right: -79px;
     bottom: 5px;
   }
   .home-games-page .section-info-grid .grid-item .z-index-show .blank2 {
     position: absolute;
-    width: 105.42px;
+    width: auto;
+    height: auto;
     left: 50px;
     bottom: 0px;
   }
   .home-games-page .section-info-grid .grid-item .z-index-show .bagel {
     position: absolute;
+    width: auto;
+    height: auto;
     left: -15px;
     bottom: 0px;
   }
@@ -655,21 +663,53 @@
     position: absolute;
     right: -50px;
     bottom: -30px;
+    width: auto;
+    height: auto;
   }
   .home-games-page .section-info-grid .grid-item .z-index-show .seeds1 {
     position: absolute;
     right: 200px;
-    bottom: 0px;
+    width: auto;
+    height: auto;
   }
   .home-games-page .section-info-grid .grid-item .z-index-show .seeds4 {
     position: absolute;
     right: -25px;
     top: 0px;
+    width: auto;
+    height: auto;
   }
   .home-games-page .section-info-grid .grid-item .z-index-show .teapot {
     position: absolute;
     right: -150px;
     top: -100px;
+    width: auto;
+    height: auto;
+  }
+  .home-games-page .section-info-grid .grid-item-4, .home-games-page .section-info-grid .grid-item-5 {
+    padding: 63px 54px;
+  }
+  .home-games-page .section-games .title {
+    margin-top: 100px;
+  }
+  .home-games-page .section-games .games-tabs-item {
+    margin: 20px;
+  }
+  .home-games-page .section-home-games-form-container {
+    padding: 60px 100px;
+  }
+  .home-games-page .section-home-games-form-container .form-caption {
+    margin-top: 5px;
+  }
+  .home-games-page .section-home-games-form-container .row-terms {
+    flex-direction: row;
+  }
+  .home-games-page .section-home-games-form-container .yellow-button {
+    margin-top: 0px;
+  }
+  .home-games-page .section-home-games-form-container .terms {
+    margin-left: 27px;
+    align-items: center;
   }
 
   #home-games-footer .footer-socials {
