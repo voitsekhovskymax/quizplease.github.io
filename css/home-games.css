@@ -40,6 +40,7 @@
 .home-games-page .section-info-grid {
   overflow: hidden;
   padding-bottom: 50px;
+  margin-top: 120px;
 }
 .home-games-page .section-info-grid .row.owl-carousel {
   margin-right: 0px;
@@ -693,10 +694,12 @@
     margin-top: 100px;
   }
   .home-games-page .section-games .games-tabs-item {
-    margin: 20px;
+    margin: 20px 20px 30px 20px;
+    font-size: 20px;
   }
   .home-games-page .section-home-games-form-container {
     padding: 60px 100px;
+    margin-top: 50px;
   }
   .home-games-page .section-home-games-form-container .form-caption {
     margin-top: 5px;
