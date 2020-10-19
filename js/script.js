@@ -245,4 +245,14 @@ $(document).ready(function () {
         }
     });
 
+
+
+    /** Скрипт скроллинга по клику кнопки наверх в футере мобилной версии */
+    $('#scroller').click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 400);
+        return false;
+    });
+
 });

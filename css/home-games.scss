@@ -45,7 +45,7 @@
   .section-info-grid {
     overflow: hidden;
     padding-bottom: 50px;
-    margin-top: 120px;
+    margin-top: 80px;
 
     .row.owl-carousel {
       margin-right: 0px;
@@ -223,6 +223,7 @@
 
       color: #FFFFFF;
       text-align: center;
+      margin-top: 0px;
     }
 
     .games-tabs {
@@ -263,7 +264,7 @@
           background: #551394;
           border: 8px solid #6C3AE7;
           box-sizing: border-box;
-          padding: 12px;
+          padding: 22px 12px;
           height: 100%;
 
           position: relative;
@@ -303,7 +304,7 @@
 
 
         &-meta {
-          margin-top: 25px;
+          margin-top: 15px;
           margin-bottom: 80px;
           display: block;
 
@@ -338,10 +339,10 @@
       color: white;
       width: 100%;
       text-align: center;
-      padding: 5px 15px;
+      padding: 10px 15px;
       outline: none;
       margin-bottom: 15px;
-
+      text-align-last:center;
       option {
         color: black;
         background: rgba(255, 255, 255, 1);
@@ -418,7 +419,7 @@
         font-family: Raleway;
         font-style: normal;
         font-weight: 500;
-        font-size: 13px;
+        font-size: 16px;
         line-height: 19px;
 
         color: #FFFFFF;

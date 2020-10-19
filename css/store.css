@@ -42,6 +42,7 @@
 }
 .store-hello {
   overflow: hidden;
+  padding-bottom: 4px;
 }
 .store-hello .row-btns {
   max-width: 960px;
@@ -114,13 +115,16 @@
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 20px;
+  padding: 15px;
   text-align: left;
   color: #000000;
   margin-right: -15px;
+  height: 181px;
+  display: flex;
+  flex-direction: column;
 }
 .store-hello .btn-get-certificate img {
-  transform: scale(1.2);
+  transform: scale(1);
   margin-top: 10px;
 }
 .store-hello .btn-get-merch {
@@ -136,8 +140,15 @@
   outline: none;
   cursor: pointer;
   position: relative;
-  padding: 20px;
+  padding: 15px;
   margin-left: -15px;
+  height: 181px;
+  display: flex;
+  flex-direction: column;
+}
+.store-hello .btn-get-merch img {
+  transform: scale(1.2);
+  margin-top: 10px;
 }
 .store-certificates {
   margin-top: 100px;
@@ -243,7 +254,9 @@
   font-weight: 700;
   font-size: 20px;
   line-height: 29px;
-  padding: 0px 20px 20px;
+  padding: 0px 12px 20px;
+  text-align: center;
+  font-family: "Akrobat-Black";
 }
 .store .certificate-help .certificate-info {
   margin-right: 0px;
@@ -311,6 +324,14 @@
   margin-bottom: 30px;
   text-align: center;
 }
+.store .store-merch-grid {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+.store .store-merch-grid .col-6 {
+  padding-right: 2px;
+  padding-left: 2px;
+}
 .store .store-merch-grid-item {
   text-align: center;
   padding-bottom: 90px;
@@ -376,7 +397,7 @@
   display: flex;
   align-items: center;
   color: #FFFFFF;
-  margin-top: 14px;
+  margin-top: 12px;
   justify-content: center;
 }
 .store .store-merch-grid-item-price img {
@@ -397,7 +418,7 @@
   margin-left: auto;
   margin-right: auto;
   color: #FFFFFF;
-  margin-top: 25px;
+  margin-top: 18px;
   display: inline-block;
   border: none;
   cursor: pointer;
@@ -618,6 +639,10 @@
     text-align: left;
   }
   .store-hello .btn-get-merch img {
+    transform: scale(1.2);
+    margin-top: 10px;
+  }
+  .store-hello .btn-get-merch img {
     transform: scale(0.8);
     margin-top: 0px;
     position: absolute;
@@ -663,6 +688,10 @@
   .store .store-merch-description {
     font-size: 16px;
     line-height: 21px;
+  }
+  .store .store-merch-grid .col-6 {
+    padding-right: 15px;
+    padding-left: 15px;
   }
   .store .store-merch-grid-item-title {
     height: 50px;
