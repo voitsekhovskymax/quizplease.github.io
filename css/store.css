@@ -17,7 +17,7 @@
   left: 0;
   right: 0;
   object-fit: cover;
-  height: 250px;
+  height: 145px;
   width: 100%;
 }
 .store-main {
@@ -32,13 +32,14 @@
   object-fit: cover;
 }
 .store-main-title {
-  font-size: 44px;
-  line-height: 48px;
+  font-size: 34px;
+  line-height: 36px;
   text-align: center;
   font-family: Akrobat-Black;
   color: white;
   text-transform: uppercase;
-  margin-bottom: 100px;
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
 .store-hello {
   overflow: hidden;
@@ -61,6 +62,7 @@
   max-width: 200px;
   margin-right: auto;
   margin-left: auto;
+  margin-top: 0px;
 }
 .store-hello-description {
   font-family: Raleway;
@@ -71,36 +73,29 @@
   text-align: center;
   color: #FFFFFF;
   position: relative;
-  margin-bottom: 190px;
   max-width: 240px;
   margin-left: auto;
   margin-right: auto;
 }
-.store-hello-container {
+.store-hello-container .store-hello-container-vector {
   position: relative;
-  padding-top: 15px;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 40px;
+  height: 300px;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
-.store-hello-container .store-vector-4 {
+.store-hello-container .store-hello-container-vector .store-vector-4-sm {
   position: absolute;
-  top: 0;
-  left: 2%;
-  right: 2%;
+  left: 0px;
+  top: 0px;
 }
-.store-hello-container .store-vector-5 {
+.store-hello-container .store-hello-container-vector .store-vector-5-sm {
   position: absolute;
-  top: 0;
-  left: 10%;
-  right: 2%;
-}
-.store-hello-container .store-vector-4-sm {
-  position: absolute;
-  top: 0;
-  right: 5%;
-}
-.store-hello-container .store-vector-5-sm {
-  position: absolute;
-  top: 0;
-  left: 5%;
+  left: 5px;
+  top: 0px;
 }
 .store-hello .btn-get-certificate {
   background: #FFE400;
@@ -151,7 +146,7 @@
   margin-top: 10px;
 }
 .store-certificates {
-  margin-top: 100px;
+  margin-top: 30px;
 }
 .store-certificates .row-certificate {
   margin-bottom: 50px;
@@ -173,7 +168,7 @@
   line-height: 24px;
   text-align: center;
   color: #FFFFFF;
-  margin-bottom: 80px;
+  margin-bottom: 50px;
 }
 .store-certificates .certificate-container {
   border: 8px solid #fff;
@@ -327,6 +322,7 @@
 .store .store-merch-grid {
   margin-right: 0px;
   margin-left: 0px;
+  background: #421b75;
 }
 .store .store-merch-grid .col-6 {
   padding-right: 2px;
@@ -345,7 +341,7 @@
 .store .store-merch-grid-item-img img {
   display: block;
   width: 100%;
-  height: 160px;
+  height: 200px;
   object-fit: cover;
 }
 .store .store-merch-grid-item-img .store-badge {
@@ -423,6 +419,7 @@
   border: none;
   cursor: pointer;
   outline: none;
+  width: 100%;
 }
 .store .store-how_to {
   margin-bottom: 100px;
@@ -583,18 +580,39 @@
 }
 
 @media (min-width: 768px) {
-  .store-hello-container {
-    padding-top: 50px;
+  .store-main-title {
+    margin: 0px;
   }
-  .store-hello-container .store-vector-4 {
-    top: 0;
-    left: 2%;
-    right: 2%;
+
+  .store .top-bg {
+    height: 150px;
   }
-  .store-hello-container .store-vector-5 {
-    top: 0;
-    left: 2%;
-    right: 2%;
+  .store-hello-container .store-hello-container-vector {
+    max-width: 710px;
+    padding-top: 70px;
+    height: 300px;
+    margin-bottom: 60px;
+    margin-top: 70px;
+  }
+  .store-hello-container .store-hello-container-vector .store-vector-4 {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+  }
+  .store-hello-container .store-hello-container-vector .store-vector-5 {
+    position: absolute;
+    left: 30px;
+    top: 5px;
+  }
+  .store-hello-container .store-hello-container-vector .store-mask-group {
+    position: absolute;
+    width: 1120px;
+    height: 350px;
+    left: -4px;
+    top: -37px;
+    transform: rotate(3deg);
+    z-index: 1;
+    max-width: initial;
   }
   .store-hello-title {
     font-size: 32px;
@@ -711,6 +729,7 @@
   }
   .store .store-merch-grid-item-btn {
     padding: 15px 50px;
+    width: auto;
   }
   .store .store-how_to-title {
     font-size: 32px;
@@ -726,6 +745,40 @@
   }
 }
 @media (min-width: 992px) {
+  .store-main {
+    padding-top: 170px;
+  }
+  .store-main-title {
+    font-size: 50px;
+  }
+  .store .top-bg {
+    height: 230px;
+  }
+  .store-hello-container .store-hello-container-vector {
+    max-width: 910px;
+    padding-top: 70px;
+    height: 350px;
+    margin-bottom: 60px;
+    margin-top: 70px;
+  }
+  .store-hello-container .store-hello-container-vector .store-vector-4 {
+    position: absolute;
+    left: 0px;
+    top: 10px;
+  }
+  .store-hello-container .store-hello-container-vector .store-vector-5 {
+    position: absolute;
+    left: 51px;
+    top: 0px;
+  }
+  .store-hello-container .store-hello-container-vector .store-mask-group {
+    position: absolute;
+    width: 932px;
+    height: 342px;
+    left: 90px;
+    top: 336px;
+    transform: rotate(0deg);
+  }
   .store-hello-title {
     font-size: 40px;
     line-height: 44px;
@@ -837,21 +890,30 @@
     margin-left: auto;
     margin-right: auto;
   }
-  .store-hello-container {
-    position: relative;
-    padding-top: 50px;
+  .store-hello-container .store-hello-container-vector {
+    max-width: 1012px;
+    padding-top: 90px;
+    height: 400px;
+    margin-bottom: 130px;
+    margin-top: 130px;
   }
-  .store-hello-container .store-vector-4 {
+  .store-hello-container .store-hello-container-vector .store-vector-4 {
     position: absolute;
-    top: 0;
-    left: 5%;
-    right: 2%;
+    left: 0px;
+    top: 0px;
   }
-  .store-hello-container .store-vector-5 {
+  .store-hello-container .store-hello-container-vector .store-vector-5 {
     position: absolute;
-    top: 0;
-    left: 10%;
-    right: 2%;
+    left: 90px !important;
+    top: 0px;
+  }
+  .store-hello-container .store-hello-container-vector .store-mask-group {
+    position: absolute;
+    width: 1128px;
+    height: 400px;
+    left: 67px;
+    transform: rotate(0.4deg);
+    top: -3px;
   }
   .store-hello .btn-get-certificate {
     background: #FFE400;
@@ -863,7 +925,7 @@
     line-height: 36px;
     position: relative;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     text-transform: uppercase;
     border: none;
     outline: none;
@@ -889,7 +951,7 @@
     font-size: 34px;
     line-height: 36px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     text-transform: uppercase;
     border: none;
     outline: none;
@@ -917,6 +979,9 @@
     line-height: 40px;
     margin-bottom: 15px;
   }
+  .store-certificates-description {
+    margin-bottom: 80px;
+  }
   .store-certificates .certificate-description {
     font-size: 16px;
     line-height: 20px;
@@ -942,7 +1007,8 @@
     cursor: pointer;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 50px;
+    margin-bottom: 42px;
+    max-width: 205px;
   }
   .store-certificates .certificate-btn.pink {
     background: #FC1AA3;
@@ -963,6 +1029,16 @@
     font-weight: 700;
     font-size: 24px;
     line-height: 32px;
+    text-align: left;
+    font-family: Raleway;
+    padding: 0px;
+    max-width: 355px;
+  }
+  .store-certificates .certificate-type {
+    margin-top: 32px;
+  }
+  .store-certificates .certificate-container {
+    margin-right: -15px;
   }
   .store .certificate-help {
     margin-bottom: 54px;

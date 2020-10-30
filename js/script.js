@@ -172,7 +172,7 @@ $(document).ready(function () {
         // Instagram Carousel
         var owl_home_games = $(".section-info-grid .owl-carousel").owlCarousel({
             loop: true,
-            // margin: 10,
+            stagePadding: 30,
             center: false,
             nav: true,
             dots: true,

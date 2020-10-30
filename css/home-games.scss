@@ -30,7 +30,7 @@
     &-description {
       font-family: Raleway;
       font-style: normal;
-      font-weight: 500;
+      font-weight: 400;
       font-size: 14px;
       line-height: 21px;
       max-width: 830px;
@@ -45,18 +45,40 @@
   .section-info-grid {
     overflow: hidden;
     padding-bottom: 50px;
-    margin-top: 80px;
+    margin-top: 60px;
 
     .row.owl-carousel {
-      margin-right: 0px;
-      margin-left: 0px;
+      //margin-right: 0px;
+      //margin-left: 0px;
+      width: calc(100% + 30px);
+
+      .owl-stage-outer {
+        .grid-item {
+          margin-left: -5px;
+          margin-right: -5px;
+        }
+
+        .owl-item {
+          opacity: 0.8;
+
+          img {
+            width: auto;
+          }
+
+          &.active {
+            opacity: 1;
+          }
+        }
+
+      }
     }
 
     .grid-item {
       background: #E20078;
-      padding: 45px 18px;
-      height: 390px;
+      padding: 30px;
+      height: 320px;
       position: relative;
+      margin-top: 30px;
 
       &-title {
         font-family: Raleway;
@@ -84,7 +106,7 @@
 
       &-4 {
         .grid-item-description {
-          max-width: 375px;
+          //max-width: 375px;
         }
       }
 
@@ -109,32 +131,26 @@
 
         .blank1 {
           position: absolute;
-          width: 103.76px;
-          height: 66.91px;
-          left: 0px;
+          left: -15px;
           top: 200px;
+
         }
 
         .comp {
           position: absolute;
-          width: 123px;
-          height: 134px;
           right: 0px;
-          bottom: 30px;
+          bottom: 14px;
         }
 
         .sandwich {
           position: absolute;
-          width: 150px;
-          height: 150px;
-          right: -48px;
-          top: -58px;
+          right: -15px;
+          top: -60px;
         }
 
         .cat {
           position: absolute;
-          width: 226px;
-          height: 152px;
+
           right: -10px;
           bottom: 0;
         }
@@ -143,51 +159,49 @@
           position: absolute;
 
           left: -18px;
-          bottom: 0;
+          bottom: -15px;
         }
 
         .radio {
           position: absolute;
-          width: 145px;
-          height: 150px;
-          right: -22px;
-          bottom: -12px;
+
+          right: -15px;
+          bottom: 0px;
+
         }
 
         .blank2 {
           position: absolute;
           left: 0;
           bottom: 0px;
+
         }
 
         .bagel {
           position: absolute;
-          left: -10px;
+          left: 0px;
           bottom: 0px;
-          width: 150px;
-          height: 145px;
-
         }
 
         .cup {
           position: absolute;
-          right: 5px;
-          bottom: 6px;
-          width: 200px;
-          height: 140px;
+          right: 0px;
+          bottom: 0px;
+
         }
 
         .seeds1 {
-          width: 50px;
-          height: 50px;
+
           position: absolute;
           right: 0px;
           bottom: 0px;
+          display: none;
+
         }
 
         .seeds4 {
-          width: 50px;
-          height: 50px;
+          display: none;
+
           position: absolute;
           right: 0px;
           bottom: 0px;
@@ -195,8 +209,8 @@
 
         .teapot {
           position: absolute;
-          right: -150px;
-          top: -120px;
+          right: -50px;
+          bottom: 0px;
         }
       }
 
@@ -234,7 +248,7 @@
       &-item {
         font-family: Raleway;
         font-style: normal;
-        font-weight: 500;
+        font-weight: 400;
         font-size: 20px;
         line-height: 20px;
         margin: 20px;
@@ -316,7 +330,10 @@
             display: flex;
             align-items: center;
             margin-right: 25px;
-
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+            font-family: Raleway;
           }
 
           .game-cost {
@@ -324,10 +341,20 @@
               margin-right: 14px;
             }
 
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
             display: flex;
             align-items: center;
+            font-family: Raleway;
+
           }
         }
+      }
+
+      .mobile-banner {
+        margin-left: auto;
+        margin-right: auto;
       }
     }
 
@@ -342,7 +369,8 @@
       padding: 10px 15px;
       outline: none;
       margin-bottom: 15px;
-      text-align-last:center;
+      text-align-last: center;
+
       option {
         color: black;
         background: rgba(255, 255, 255, 1);
@@ -593,6 +621,110 @@
   }
 }
 
+@media (max-width: 767px) {
+  .home-games-page {
+    .section-info-grid {
+      .grid-item {
+        .z-index-show {
+
+          .blank1 {
+            position: absolute;
+            left: -15px;
+            top: 200px;
+            width: 50% !important;
+
+          }
+
+          .comp {
+            position: absolute;
+            right: 0px;
+            bottom: 14px;
+            width: 50% !important;
+          }
+
+          .sandwich {
+            position: absolute;
+            right: -15px;
+            top: -60px;
+            width: 50% !important;
+          }
+
+          .cat {
+            position: absolute;
+            width: 60% !important;
+
+            right: -10px;
+            bottom: 0;
+          }
+
+          .seeds3 {
+            position: absolute;
+
+            left: -18px;
+            bottom: -15px;
+            width: 40% !important;
+          }
+
+          .radio {
+            position: absolute;
+            width: 50% !important;
+
+            right: -15px;
+            bottom: 0px;
+
+          }
+
+          .blank2 {
+            position: absolute;
+            left: 0;
+            bottom: 0px;
+            width: 50% !important;
+
+          }
+
+          .bagel {
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+            width: 40% !important;
+          }
+
+          .cup {
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+            width: 60% !important;
+
+          }
+
+          .seeds1 {
+
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+            display: none;
+
+          }
+
+          .seeds4 {
+            display: none;
+
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+          }
+
+          .teapot {
+            position: absolute;
+            right: -50px;
+            bottom: 0px;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (min-width: 768px) {
   // col-md-
   .home-games-page {
@@ -600,6 +732,27 @@
       font-size: 54px;
       margin-top: 180px;
 
+    }
+
+    .section-info-grid {
+      .grid-item {
+        .z-index-show {
+          .seeds4 {
+
+          }
+
+          .teapot {
+            position: absolute;
+            right: -80px;
+            bottom: -100px;
+          }
+        }
+
+        &.grid-item-5 {
+          height: 236px;
+          padding: 30px;
+        }
+      }
     }
 
     .main-section-description {
@@ -676,13 +829,13 @@
   // col-lg-
   .home-games-page {
     .main-section-title {
-      font-size: 90px;
+      font-size: 80px;
       line-height: 100px;
     }
 
     .main-section-description {
-      font-size: 24px;
-      line-height: 28px;
+      font-size: 20px;
+      line-height: 24px;
     }
 
 
@@ -690,13 +843,13 @@
       .grid-item {
         .grid-item-title {
           font-weight: 900;
-          font-size: 24px;
-          line-height: 28px;
+          font-size: 20px;
+          line-height: 24px;
         }
 
         .grid-item-description {
-          font-size: 16px;
-          line-height: 19px;
+          font-size: 14px;
+          line-height: 20px;
         }
 
         .z-index-show {
@@ -717,6 +870,12 @@
           .radio {
             width: auto;
             height: auto;
+          }
+        }
+
+        &.grid-item-5 {
+          .yellow-button {
+            margin-top: 20px !important;
           }
         }
       }
@@ -742,13 +901,13 @@
         }
 
         .game-title {
-          font-size: 32px;
-          line-height: 38px;
+          font-size: 26px;
+          line-height: 36px;
         }
 
         .game-description-home {
-          font-size: 16px;
-          line-height: 24px;
+          font-size: 14px;
+          line-height: 20px;
         }
       }
     }
@@ -770,59 +929,67 @@
   .home-games-page {
     .main-section {
       &-title {
-        margin-top: 230px;
-        margin-bottom: 40px;
+        margin-top: 17 Q0px;
+        margin-bottom: 20px;
       }
     }
 
     .section-info-grid {
       .grid-item {
+        height: 270px;
+
         .z-index-show {
 
           .blank1 {
             position: absolute;
             width: auto;
             height: auto;
-            left: -40px;
-            top: 200px;
+            left: -20px;
+            top: 150px;
           }
 
           .comp {
             position: absolute;
-            width: auto;
-            height: auto;
-            right: 30px;
-            bottom: 30px;
+            width: 50%;
+            height: 50%;
+            right: 0px;
+            bottom: 10px;
+            object-fit: contain;
           }
 
           .sandwich {
             position: absolute;
-            width: auto;
-            height: auto;
+            width: 50%;
+            height: 50%;
             left: 200px;
-            top: -70px;
+            top: -65px;
+            object-fit: contain;
           }
 
           .cat {
             position: absolute;
-            width: auto;
-            height: auto;
-            right: -40px;
+            width: 50%;
+            height: 50%;
+            right: 0px;
             bottom: 0;
           }
 
           .seeds3 {
             position: absolute;
-            left: -18px;
-            bottom: 16px;
+            left: 0px;
+            bottom: 0px;
+            width: 50%;
+            height: 50%;
+            object-fit: contain;
           }
 
           .radio {
             position: absolute;
-            width: auto;
-            height: auto;
+            width: 50%;
+            height: 50%;
             right: -79px;
             bottom: 5px;
+            object-fit: contain;
           }
 
           .blank2 {
@@ -835,19 +1002,20 @@
 
           .bagel {
             position: absolute;
-            width: auto;
-            height: auto;
+            width: 50%;
+            height: 40%;
             left: -15px;
             bottom: 0px;
-
+            object-fit: contain;
           }
 
           .cup {
             position: absolute;
             right: -50px;
-            bottom: -30px;
-            width: auto;
-            height: auto;
+            bottom: 0px;
+            width: 50%;
+            height: 50%;
+            object-fit: contain;
           }
 
           .seeds1 {
@@ -855,39 +1023,53 @@
             right: 200px;
             width: auto;
             height: auto;
+            display: block;
           }
 
           .seeds4 {
             position: absolute;
-            right: -25px;
-            top: 0px;
-            width: auto;
+            right: 0px;
+            top: -37px;
+            width: 80px;
             height: auto;
+            display: block;
+            object-fit: contain;
+
           }
 
           .teapot {
             position: absolute;
-            right: -150px;
-            top: -100px;
-            width: auto;
-            height: auto;
+            right: 0;
+            top: -0px;
+            width: 50%;
+            height: 100%;
+            object-fit: contain;
           }
         }
 
-        &-4, &-5 {
-          padding: 63px 54px;
+        &-4, {
+          padding: 30px;
+        }
+
+        &.grid-item-5 {
+          height: 270px;
+          padding: 30px;
+
+          .yellow-button {
+            margin-top: 3rem !important;
+          }
         }
       }
     }
 
     .section-games {
       .title {
-        margin-top: 100px;
+        margin-top: 50px;
       }
 
       .games-tabs-item {
-        margin: 20px 20px 30px 20px;
-        font-size: 20px;
+        margin: 20px 25px 30px 25px;
+        font-size: 18px;
       }
     }
 
@@ -895,8 +1077,18 @@
       padding: 60px 100px;
       margin-top: 50px;
 
+      .form-title {
+        margin-top: 15px;
+        font-size: 28px;
+        line-height: 38px;
+        padding-right: 10px;
+      }
+
       .form-caption {
         margin-top: 5px;
+        font-size: 20px;
+        line-height: 36px;
+        font-weight: 400;
       }
 
       .row-terms {
@@ -911,7 +1103,15 @@
       .terms {
         margin-left: 27px;
         align-items: center;
+        width: 350px;
+        flex: none;
+        margin-top: 5px;
+        font-size: 14px;
+        line-height: 17px;
+      }
 
+      #email-subscriber {
+        width: 500px;
       }
     }
 
